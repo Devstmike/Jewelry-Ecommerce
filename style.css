@@ -1,0 +1,490 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue : rgb(28, 72, 129);
+    --pad-right : 50px;
+    --my-grey : rgb(221, 213, 213);
+    --shop-font-size :1.5rem;
+    --bigger-h1: 3rem;
+    --bigger-p: 1.3rem;
+    --quote : 5rem;
+    --icon-size :1.5rem;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  15px 50px ;
+}
+
+
+.header li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.header > h1{
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.header li a{
+    color: black;
+}
+
+.header li:last-child{
+    font-size: var(--shop-font-size);
+}
+
+
+body > img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+body > .shop .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+body > .shop .gridcontainer img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+body > .shop{
+    padding: 50px;
+}
+
+body > .shop h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.shop .gridcontainer .item p{
+    color: var(--blue);
+    text-align: center;
+}
+
+.hand{
+    display: flex;
+    /* justify-content: space-between;
+    align-items: start; */
+    background-color: var(--blue);
+    min-height: 80vh;
+}
+
+.hand  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid red;
+}
+
+.hand .word{
+    padding: 0 50px;
+    color: white;
+    border: 1px solid red;
+    
+}
+
+.hand > *:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.hand > *{
+    width: 100%;
+    flex-basis: 1;
+    height: inherit;
+}
+
+.hand  h1{
+    font-size: var(--bigger-h1);
+    text-transform: uppercase;
+}
+
+.hand p{
+    font-size: var(--bigger-p);
+    margin-bottom: 20px;
+}
+
+.hand button{
+    color: var(--blue);
+    background-color: white ;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+
+.latest > .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.latest > .gridcontainer img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.latest{
+    padding: var(--pad-right);
+}
+
+.latest > h1{
+    color: var(--blue);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.latest > div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.latest button{
+    background-color: var(--blue);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* https://www.figma.com/community/file/1095818988729566042 */
+
+
+section.review{
+    padding: 50px;
+}
+
+section.review .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* border: 1px solid red; */
+}
+
+.review .gridcontainer > div{
+    border: 1px solid rgb(221, 213, 213);
+    padding: 20px;
+}
+
+.review h1{
+    color: var(--blue);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.review  .gridcontainer .item > h3{
+    display: inline-block;
+    color: var(--blue);
+    font-size: var(--quote);
+    /* border: 1px solid; */
+    padding: 0;
+    height: 50px;
+}
+
+
+.review .gridcontainer > div p{
+    text-align: center;
+}
+
+
+.review .gridcontainer > div p:nth-child(2){
+    margin-bottom: 20px;
+}
+
+
+.service > .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service > .gridcontainer img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.service{
+    padding: var(--pad-right);
+}
+
+.service > h1{
+    color: var(--blue);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.service > div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.service button{
+    background-color: var(--blue);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.service .gridcontainer p {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+footer{
+    background-color: rgb(161, 206, 233);
+    padding: 50px 100px;
+}
+
+footer .image {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: white;   
+}
+
+footer .image > *{
+    width: 100%;
+    height: inherit;
+    /* border: 1px solid red; */
+    /* border: 1px solid red;
+ */
+  flex-basis: 1;
+}
+
+footer .word{
+    /* background-color: white; */
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+
+}
+
+
+footer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+footer .word h1{
+    color: var(--blue);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ footer .word button{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+
+footer .word p{
+    width: 80%;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+
+footer .list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 50px 0 30px;
+    border-bottom: 1px solid var(--my-grey);
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+footer .list > div > h3{
+    margin-bottom: 20px;
+    /* background-color: red; */
+}
+
+footer .list li {
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .list li a{
+    color: black;
+
+}
+
+footer .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* make social media icons rounded and black color*/
+/* make image in footer have 100% height */
+footer .icons li{
+    display: inline-block;
+    font-size: var(--icon-size);
+    margin-right: 25px;
+    border-radius: 50%;
+    padding: 8px 12px;
+    background-color: black;
+}
+
+footer .icons li:nth-child(2), footer .icons li:nth-child(4){
+    padding: ;
+}
+
+footer .icons a{
+    color: white;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .fa-bars{
+    display: none;
+    color: var(--blue);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+    .header nav {
+        display: none;
+    }
+
+    .header .fa-bars{
+        display: block;
+    }
+
+    body > .shop .gridcontainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .list{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    :root{
+       
+        --shop-font-size :1.5rem;
+        --bigger-h1: 2rem;
+        --bigger-p: 1rem;
+    }
+
+    body > .shop .gridcontainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .list{
+        grid-template-columns: repeat(2,1fr);
+    } 
+
+    section.review .gridcontainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .latest > .gridcontainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service > .gridcontainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body > .shop .gridcontainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .list{
+        grid-template-columns: repeat(1,1fr);
+    } 
+
+    .hand{
+        flex-direction: column;
+    }
+
+    .hand > *:first-child{
+        padding: 70px 20px;
+    }
+
+    footer .image{
+        flex-direction: column;
+    }
+
+    footer .image .word h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+/*
+ have font size
+flex
+grid
+flexbasis
+flexwrap
+gridtempcol
+padding for overall
+padding for button
+h1
+h3
+p
+button
+icon
+
+
+
+
+
+*/
