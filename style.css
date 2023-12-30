@@ -16,7 +16,7 @@
     --bigger-h1: 3rem;
     --bigger-p: 1.3rem;
     --quote : 5rem;
-    --icon-size :1.5rem;
+    --icon-size :1rem;
 }
 
 body{
@@ -96,14 +96,14 @@ body > .shop h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .hand .word{
     padding: 0 50px;
     color: white;
-    border: 1px solid red;
-    
+    /* border: 1px solid red;
+     */
 }
 
 .hand > *:first-child{
@@ -354,24 +354,27 @@ footer .list li a{
 footer .logo{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 
 /* make social media icons rounded and black color*/
 /* make image in footer have 100% height */
+footer .icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
 footer .icons li{
-    display: inline-block;
     font-size: var(--icon-size);
-    margin-right: 25px;
-    border-radius: 50%;
-    padding: 8px 12px;
+    border-radius: 5px;
+    padding: 8px;
     background-color: black;
 }
 
-footer .icons li:nth-child(2), footer .icons li:nth-child(4){
+/* footer .icons li:nth-child(2), footer .icons li:nth-child(4){
     padding: ;
-}
+} */
 
 footer .icons a{
     color: white;
@@ -384,6 +387,7 @@ footer .icons a{
 .header .fa-bars{
     display: none;
     color: var(--blue);
+    font-size: 2rem;
 }
 
 /* media queries */
@@ -396,8 +400,14 @@ footer .icons a{
         display: none;
     }
 
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .header .fa-bars{
         display: block;
+        
     }
 
     body > .shop .gridcontainer{
@@ -439,6 +449,22 @@ footer .icons a{
     .service > .gridcontainer{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    footer .image{
+        flex-direction: column;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    footer .word{
+        padding: 60px 0;
+    }
+
+     footer .icons {
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
 
 @media only screen and (max-width: 600px) {
@@ -458,12 +484,14 @@ footer .icons a{
         padding: 70px 20px;
     }
 
-    footer .image{
-        flex-direction: column;
-    }
+    
 
     footer .image .word h1{
         font-size: 1.5rem;
+    }
+
+    .hand > *:last-child{
+        height: 300px;
     }
 }
 
