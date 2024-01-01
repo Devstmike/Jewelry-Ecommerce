@@ -390,6 +390,36 @@ footer .icons a{
     font-size: 2rem;
 }
 
+
+.showMenu{
+    display: block !important;
+    background-color: rgba(103, 138, 159,0.9) ;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+}
+
+.showMenu li{
+    display: block;
+}
+
+.showMenu li a{
+    color: white; 
+}
+
+.showMenu li:hover a{
+    border-bottom: 5px solid rgb(42, 113, 142);
+    border-radius: 5px;
+}
+
+.showMenu .cancel{
+    position: fixed;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+}
 /* media queries */
 
 @media only screen and (max-width: 1200px) {
